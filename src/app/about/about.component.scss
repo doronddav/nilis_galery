@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Dancing+Script&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Dancing+Script&family=Permanent+Marker&display=swap");
+
+.aboutContainer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid black;
+  font-size: 7rem;
+  .my-photo {
+    // margin-top: 2rem;
+    width: 10rem;
+    height: 10rem;
+    align-self: center;
+    border-radius: 50%;
+  }
+  .about-title {
+    font-size: 4rem;
+    font-family: "Amatic SC", sans-serif;
+  }
+  .brush {
+  }
+  .about_me {
+    font-family: "Secular One";
+    font-size: 2rem;
+    height: 12rem;
+    line-height: normal;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .about_me {
+    margin-bottom: 3rem;
+  }
+  .about-title {
+    line-height: normal;
+  }
+}

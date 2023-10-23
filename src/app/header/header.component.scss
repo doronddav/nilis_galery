@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Dancing+Script&family=Permanent+Marker&display=swap");
+
+.mainContainer {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 6rem;
+  width: 100%;
+  font-family: "Amatic SC", sans-serif;
+  overflow-y: hidden;
+
+  a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+  }
+}
+img {
+  width: 5rem;
+  height: 5rem;
+}
+.logo_container {
+  height: 5rem;
+}
+.links_container {
+  display: flex;
+  gap: 3rem;
+}

@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Dancing+Script&family=Permanent+Marker&display=swap");
+
+.footer_container {
+  width: 98%;
+  display: flex;
+  direction: rtl;
+  flex-direction: column;
+  padding: 0 1rem;
+  background-color: #f1f2f5;
+}
+.datils_container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 1rem 0 0;
+  h3 {
+    margin: 0;
+    font-size: 2rem;
+    font-family: "Amatic SC", sans-serif;
+  }
+}
+.all_details {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: baseline;
+  h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: "Amatic SC", sans-serif;
+  }
+  a {
+    font-size: 1.2rem;
+    font-family: "Amatic SC", sans-serif;
+  }
+}
+.copyright_container {
+  font-size: 0.8rem;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+}
+@media only screen and (max-width: 1200px) {
+  .footer_container {
+  }
+  .datils_container {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .all_details h2 {
+    display: none;
+    align-items: center;
+  }
+}

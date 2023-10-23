@@ -1,0 +1,24 @@
+<div class="gallery_container">
+  <h2 class="title">הגלריה שלי</h2>
+  <div class="grid_container">
+    <div *ngFor="let prod of allProducts" class="item" appHighlight>
+      <div class="img-container">
+        <img [src]="prod.photoUrl" alt="" />
+      </div>
+      <span class="details-containe">
+        <p class="phtoName">{{ prod.name }}</p>
+        <p>&#8362; 600</p>
+        <button (click)="selectedProduct = prod; productSelected = true">
+          i want this Photo
+        </button>
+      </span>
+    </div>
+  </div>
+</div>
+<buy-product
+  (productSelectedChange)="onProductSelectedChange($event)"
+  [(selectedProduct)]="selectedProduct"
+  (productSelected)="(productSelected)"
+  *ngIf="productSelected"
+>
+</buy-product>

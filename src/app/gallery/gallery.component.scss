@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Dancing+Script&family=Permanent+Marker&display=swap");
+
+.gallery_container {
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+}
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+  align-items: stretch;
+  justify-items: center;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+}
+.title {
+  text-align: center;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 4rem;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  backdrop-filter: blur(2.4px);
+  -webkit-backdrop-filter: blur(2.4px);
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  width: 22rem;
+  gap: 1rem;
+  font-family: "Amatic SC", sans-serif;
+}
+
+.img-container img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 1rem;
+}
+
+.details-containe {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.heghlight-product {
+  -webkit-box-shadow: 0 0 1px 3 px #000 inset;
+  -moz-box-shadow: 0 0 1px 3 px #000 inset;
+  border: #efefef 2px solid;
+  box-shadow: 10px 10px 18px #cccccc;
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 1200px) {
+  .gallery_container {
+    margin: 0 1rem;
+    overflow-x: hidden;
+  }
+  .grid_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .gallery_container {
+    margin: 0 1rem;
+  }
+  .grid_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .item {
+    width: 16rem;
+  }
+
+  .img-container img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1rem;
+  }
+}
