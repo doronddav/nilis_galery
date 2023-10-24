@@ -8,8 +8,7 @@ import {
 import { FormBuilder, FormGroup } from '@angular/forms';
 import emailJs from '@emailjs/browser';
 import { EmailJSResponseStatus } from 'emailjs-com';
-import { config } from 'dotenv';
-config();
+
 @Component({
   selector: 'buy-product',
   templateUrl: './buy-product.component.html',
@@ -28,11 +27,7 @@ export class BuyProductComponent {
 
   @Output() selectedProductChange = new EventEmitter<any>();
   @Output() productSelectedChange = new EventEmitter<boolean>();
-  constructor(private fb: FormBuilder) {
-    const SERVICE_ID = process.env['SERVICE_ID'];
-    const TEMPLATE_ID = process.env['TEMPLATE_ID'];
-    const PUBLIC_KEY = process.env['PUBLIC_KEY'];
-  }
+  constructor(private fb: FormBuilder) {}
   closePopUp() {
     this.productSelected = false;
     console.log(this.productSelected);
